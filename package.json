@@ -1,0 +1,21 @@
+{
+  "name": "next-course",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "serve": "concurrently \"npm run dev\" \"npm run mock\"",
+    "mock": "json-server -w db.json -p 4200 -d 500"
+  },
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "next": "10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
